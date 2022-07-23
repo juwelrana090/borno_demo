@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* header */
+    .header{
+        @apply 
+        bg-slate-900 backdrop-blur backdrop-filter dark:bg-gray-900 dark:bg-opacity-75 dark:backdrop-blur dark:backdrop-filter
+    }
+    
+    .naver{
+        @apply 
+        /* border-b border-green-200  */
+        px-1 lg:px-6 py-1.5
+    } 
+    
+    .nav-item{
+        @apply 
+        py-2 pr-2 pl-2 
+        text-red-600  
+        rounded
+        hover:bg-blue-700 
+        hover:text-white
+
+        dark:text-blue-400
+        dark:hover:bg-sky-700 
+        dark:hover:text-white
+        dark:border-gray-700
+    }
+    
+    /* 2nd Navebar Item*/
+    .naver2{
+        @apply 
+        bg-slate-800 
+        backdrop-blur 
+        backdrop-filter 
+        dark:bg-slate-900 
+        dark:bg-opacity-75 
+        dark:backdrop-blur 
+        dark:backdrop-filter 
+        border-b 
+        border-gray-700
+        shadow;
+    }
+
+    .fixtop{
+        @apply 
+        bg-gray-900 
+        backdrop-blur 
+        backdrop-filter 
+        border-b 
+        border-gray-700
+        shadow
+        dark:bg-gray-900 
+        dark:backdrop-blur 
+        dark:backdrop-filter ;
+    }    
+    
+    .nav-item2 {
+        @apply text-white
+              border-b-2 border-transparent 
+             transition-colors duration-200 
+             transform 
+             font-semibold
+             mx-1.5 sm:mx-6
+             hover:text-red-600
+             hover:border-blue-700 
+             dark:hover:text-red-600;
+    }
+
+    .nav-item3 {
+        @apply text-white
+        border-b-2 border-transparent 
+        transition-colors duration-200 
+        transform 
+        font-semibold
+        mx-1 sm:mx-2
+        hover:text-red-600  
+        dark:hover:text-red-600;
+    }
+
+
+
+    .signup{
+        @apply hidden md:flex lg:flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded hover:bg-green-500 focus:outline-none focus:ring focus:ring-green-300 focus:ring-opacity-80
+    }
+
+    .login{
+        @apply hidden md:flex lg:flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80
+    }
+
+    .log2{
+        @apply hidden md:flex lg:flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-80
+    }
+
+    .reg2{
+        @apply hidden md:flex lg:flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-500 rounded-md hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-200 focus:ring-opacity-80
+    }
+
+    .mobileOpen{
+        @apply py-2 px-4 text-sm font-medium text-blue-700 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white
+    }
+
+    .gr-btn-1{
+        @apply text-base hover:scale-105 focus:outline-none flex justify-center px-1 py-2 cursor-pointer 
+        text-white
+        /* border-r-2 border-indigo-100 */
+        duration-200 ease-in-out 
+        transition;
+    }
+
+    .gr-btn-2{
+        @apply text-base hover:scale-105 focus:outline-none flex justify-center px-1 py-2 cursor-pointer 
+        text-white
+        duration-200 ease-in-out 
+        transition;
+    }
+
+    .gr-btn-3{
+        @apply text-base hover:scale-105 focus:outline-none flex justify-center px-1 py-2 cursor-pointer 
+        text-white
+        duration-200 ease-in-out 
+        transition;
+    }
+
+    
+
+}
